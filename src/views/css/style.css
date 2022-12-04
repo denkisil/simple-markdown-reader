@@ -1,0 +1,101 @@
+body, html {
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.main {
+	width: 100%;
+	user-select: none;
+}
+
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.items-flex-display {
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr
+}
+
+.actions-items-flex-display {
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.recent,
+.actions {
+	width: 85%;
+	padding-left: 7%;
+}
+
+.items-grid-boxed {
+	display: grid;
+}
+
+.items-flexed {
+	display: flex;
+}
+
+.recent-block,
+.actions-block {
+	user-select: none; 
+	align-items: center;
+}
+
+.actions-navbar {
+	align-items: center;
+}
+
+.recent-list,
+.actions-list {
+	align-items: center;	
+	list-style-type: none;
+}
+
+.recent-list>li,
+.actions-list>li {
+	height: 25%;
+	align-items: center;
+}
+
+.action-list-item {
+	height: 25%;
+	align-items: center;
+	width: 100%;
+	/*display: inline-block;*/
+}
+
+.action-list-item:hover{
+	background: grey;
+}
+
+.action-list-desc {
+	padding-left: 7%;
+}
+
+.goto-home-button {
+	width: 40%;
+	padding: 1%;
+	border: none;
+	outline: none;
+	background: white;
+}
+
+.goto-home-button:hover {
+	background: grey;
+}

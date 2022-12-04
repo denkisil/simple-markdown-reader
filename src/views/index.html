@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title id="set-title"></title>
+</head>
+<body unselectable="on" ondragstart="return false;" ondrop="return false;">
+	<div class="main items-flex-display">
+		<div id="recent" class="recent">
+			<h1>Recently opened</h1>
+			<div class="view-actions">
+				<button class="goto-home-button" onclick='clearRecentList()'>Clear recent files</button>
+			</div>
+			<div class="recent-block items-grid-boxed">
+				<ul class="recent-list items-grid-boxed">
+					<span id="files-recent"></span>
+				</ul>
+			</div>
+		</div>
+		<div id="actions" class=" actions">
+			<h1>Quick actions</h1>
+			<div class="actions-block items-grid-boxed">
+				<nav class="actions-navbar">
+					<ul class="actions-list">
+						<li>
+							<div id="open-file" class="action-list-item actions-items-flex-display" onclick="openButtonHandle()">
+								<div class="action-list-icon">
+									<span id="paste-open-file-icon"></span>
+								</div>	
+								<div class="action-list-desc">
+									<h3>Open file</h3>
+									<p>Use it for opening exist Markdown file</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="action-list-item actions-items-flex-display">
+								<div class="action-list-icon">
+									<span id="paste-open-remote-icon"></span>
+								</div>	
+								<div class="action-list-desc">
+									<h3>Open remote file</h3>
+									<p>Use it for opening Markdown file on remote (commic soon)</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- <script src="js/version.js"></script> -->
+<script src="js/icons.js"></script>
+<script src="js/recentFiles.js"></script>
+<script src="js/mainPage/setTitle.js"></script>
+<script src="js/mainPage/openFile.js"></script>
+<script src="js/openRecentFiles.js"></script>
+</html>

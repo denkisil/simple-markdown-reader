@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title id="set-view-title"></title>
+</head>
+<body onload="openRecentFile()">
+	<div class="main">
+		<div class="view-actions">
+			<button class="goto-home-button" onclick='document.location.href = "index.html"'>&#8962; To main</button>
+			<button id="view-raw" class="goto-home-button">View raw content</button>
+			<button id="view-normal" class="goto-home-button" disabled="true">View normal content</button>
+		</div>
+		<div class="file-opened">
+			<span id="paste-raw" disable="true"></span>
+			<span id="paste-markdown"></span>
+		</div>
+	</div>
+</body>
+<script src="js/mainPage/setTitle.js"></script>
+<script src="js/openRecentFiles.js"></script>
+</html>

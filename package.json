@@ -1,0 +1,28 @@
+{
+  "name": "simple-markdown-reader",
+  "version": "0.1.0",
+  "description": "Simple Markdown reader created on Electron.js",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "denkisil",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.3",
+    "@electron-forge/maker-deb": "^6.0.3",
+    "@electron-forge/maker-rpm": "^6.0.3",
+    "@electron-forge/maker-squirrel": "^6.0.3",
+    "@electron-forge/maker-zip": "^6.0.3",
+    "electron": "^22.0.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "fs": "^0.0.1-security",
+    "highlight.js": "^11.7.0",
+    "markdown-it": "^13.0.1",
+    "mime-types": "^2.1.35"
+  }
+}
